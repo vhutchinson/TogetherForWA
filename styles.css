@@ -5,7 +5,33 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nunito Sans', Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #ccff80;
+}
+
+.Index-gallery-item-content-body p {
+  opacity: 0
+}
+
+.Index-gallery-item-content-body p:nth-child(1) {
+  animation: change 2s ease-in-out forwards;
+}
+
+.Index-gallery-item-content-body p:nth-child(2) {
+  animation: change 2s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+.Index-gallery-item-content-body p:nth-child(3) {
+  animation: change 2s ease-in-out forwards;
+  animation-delay: 5s;
+}
+
+@keyframes change {
+  to {
+    opacity: 1
+  }
 }
 
 /* Style the side navigation */
@@ -17,19 +43,29 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
+  background-image: url(Images/Nav_Image.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: mediumseagreen;
 }
 
 /* Side navigation links */
 .sidenav a {
-  color: white;
+  color: #336600;
   padding: 16px;
   text-decoration: none;
+  font-family: 'Nunito Sans', Helvetica, sans-serif;
+  font-size: 2.6em;
+  font-weight: bold;
+  font-stretch: expanded;
+  text-align: center;
+  line-height: 6;
   display: block;
 }
 
 /* Change color on hover */
 .sidenav a:hover {
-  color: mediumseagreen;
+  color: white;
 }
 
 /* Style the content */
