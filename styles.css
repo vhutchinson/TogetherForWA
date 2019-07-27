@@ -73,3 +73,11 @@ body {
   margin-left: 25%;
   padding-left: 2%;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 20%;
+  text-align: center;
+}

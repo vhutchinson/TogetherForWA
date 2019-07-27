@@ -1,4 +1,4 @@
-<?php include './navigation.php';?>
+<?php include 'navigation.php';?>
 
 <body>
 	<div class=Index-gallery-item-content-body>

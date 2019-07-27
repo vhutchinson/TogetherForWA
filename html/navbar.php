@@ -12,7 +12,7 @@ include(__DIR__ .'\..\php\dbconnect.php');
   <link rel="shortcut icon" href="../Logo.ico" type="image/x-icon" />
 </head>
 <nav class="sidenav">
-  <a href="#">Home</a>
-  <a href="#">Contact</a>
-  <a href="#">Guess</a>
+  <a href="index.php">Home</a>
+  <a href="contact.php">Contact</a>
+  <a href="guess.php">Guess</a>
 </nav>
