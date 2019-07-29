@@ -3,36 +3,48 @@
   box-sizing: border-box;
 }
 
+/*Style the body*/
 body {
-  margin: 0;
-  font-family: 'Nunito Sans', Helvetica, sans-serif;
+  padding-left: 20%;
+  color: #336600;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
   font-size: 100%;
   background-color: #ccff80;
 }
 
-.Index-gallery-item-content-body p {
-  opacity: 0
+.main {
+  letter-spacing: 0.1em;
+  font-style: italic;
+  font-size: 6em;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 0.5;
 }
 
-.Index-gallery-item-content-body p:nth-child(1) {
-  animation: change 2s ease-in-out forwards;
+/*Style index fade in words*/
+/*------------------------------------------------*/
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
-.Index-gallery-item-content-body p:nth-child(2) {
-  animation: change 2s ease-in-out forwards;
-  animation-delay: 2.5s;
+.fadeInAnimated {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
 }
 
-.Index-gallery-item-content-body p:nth-child(3) {
-  animation: change 2s ease-in-out forwards;
-  animation-delay: 5s;
+#second {
+  animation-delay: 1.2s;
 }
 
-@keyframes change {
-  to {
-    opacity: 1
-  }
+#third {
+  animation-delay: 2.4s;
 }
+
+#fourth {
+  animation-delay: 3.6s;
+}
+/*------------------------------------------------*/
 
 /* Style the side navigation */
 .sidenav {
@@ -54,26 +66,84 @@ body {
   color: #336600;
   padding: 16px;
   text-decoration: none;
-  font-family: 'Nunito Sans', Helvetica, sans-serif;
+  font-family: 'Vollkorn', Helvetica, sans-serif;
   font-size: 2.6em;
   font-weight: bold;
-  font-stretch: expanded;
   text-align: center;
   line-height: 6;
   display: block;
 }
 
-/* Change color on hover */
+/* Change link color on hover */
 .sidenav a:hover {
-  color: white;
+  color: #ffffe6;
 }
 
-/* Style the content */
-.content {
-  margin-left: 25%;
-  padding-left: 2%;
+/* Style svg icon links to photo albums */
+/*--------------------------------------*/
+#svg_container1, #svg_container2, #svg_container3, #svg_container4 {
+  width: 20%;
+  height: 0;
+  padding-top: 20%;
+  margin-right: 2%;
+  margin-left: 2%;
+  position: relative;
+  float: right;
 }
 
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Hover link color change */
+#svg_container1 a:hover, #svg_container2 a:hover, #svg_container3 a:hover, #svg_container4 a:hover {
+  fill: #ffffe6;
+}
+
+/* Hover link text */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10em;
+  background-color: black;
+  color: #ffffe6;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /*Position tooltip*/
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 45%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/*----------------------------------------*/
+
+/* Style the footer */
 footer {
   position: fixed;
   bottom: 0;
