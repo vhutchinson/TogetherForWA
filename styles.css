@@ -74,7 +74,7 @@ h3 {
   background-image: url(Images/Nav_Image.jpg);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-color: #336600;
+  background-color: #aee825;
 }
 
 .sidenav img {
@@ -294,7 +294,8 @@ input[type=submit]:hover {
 /*----------------------------------------*/
 /* Style the footer */
 footer {
-  position: fixed;
+  display: inline-block;
+  width: 100%;
   bottom: 0;
   right: 0;
   left: 20%;
