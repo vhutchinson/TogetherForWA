@@ -74,7 +74,11 @@ h3 {
   background-image: url(Images/Nav_Image.jpg);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-color: mediumseagreen;
+  background-color: #336600;
+}
+
+.sidenav img {
+  object-fit: contain;
 }
 
 /* Side navigation links */
