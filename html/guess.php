@@ -9,7 +9,7 @@
 	</div>
 	<br><br>
 	<div class="textOnGuessImage">	
-		<img src="../Images/Guess/Coffee.jpg" alt="Cold Coffee">
+		<img src="../Images/Guess/coffee.jpg" alt="Cold Coffee">
 		<h3>Cold Coffee</h3>
 		<h2>Luna's iced mocha coffee in a can is very refreshing on hot days during the dry season!</h2>
 	</div>
